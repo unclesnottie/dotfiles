@@ -14,6 +14,8 @@ alias ls='ls -FG'
 alias ll='ls -l'
 alias la='ls -a'
 alias lal='ls -al'
+alias vi='mvim -v'
+alias vim='mvim -v'
 
 # Functions
 mcd() { mkdir -p "$1"; cd "$1"; }
