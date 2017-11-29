@@ -9,8 +9,14 @@ set history=50
 set ruler         " show the cursor position all the time
 set showcmd       " display incomplete commands
 set incsearch     " do incremental searching
+set hlsearch
+set ignorecase smartcase
 set laststatus=2  " Always display the status line
+set showtabline=2 " Always show tab bar at top
 set autowrite     " Automatically :write before running commands
+set autoindent
+set showmatch
+set autoread
 
 if !has('gui_running')
   set t_Co=256
@@ -36,6 +42,7 @@ set encoding=utf8
 " Softtabs, 2 spaces
 set tabstop=2
 set shiftwidth=2
+set softtabstop=2
 set shiftround
 set expandtab
 
