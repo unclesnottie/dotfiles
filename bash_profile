@@ -62,7 +62,5 @@ source ~/.git-prompt.sh
 GIT_PS1_SHOWDIRTYSTATE=true
 
 #Fancy Bash Prompt
-LINE=$(printf '%*s' "$(tput cols)" '' | tr ' ' =)
-SPACES=$(printf '%*s' "$(($(tput cols)-10))" '')
-#LINE=├⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯┤
-export PS1="\[\e[1;38;5;202m\]\n$LINE\n$SPACES\[\e[0m\] \t\r\e[0;90m\][\u@\h]\[\e[0m\] \W \n\[\e[38;5;202m\]\$(__git_ps1) $\[\e[0m\] "
+LINE==========================
+export PS1="\[\e[0;90m\]\n\t\e[0m\]\e[1;38;5;202m\] $LINE\[\e[0m\] \e[0;90m\]\n[\u@\h]\[\e[0m\] \W \n\[\e[38;5;202m\]\$(__git_ps1) $\[\e[0m\] "
