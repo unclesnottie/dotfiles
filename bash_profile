@@ -63,4 +63,5 @@ GIT_PS1_SHOWDIRTYSTATE=true
 
 #Fancy Bash Prompt
 LINE==========================
-export PS1="\[\e[0;90m\]\n\t\e[0m\]\e[1;38;5;202m\] $LINE\[\e[0m\] \e[0;90m\]\n[\u@\h]\[\e[0m\] \W \n\[\e[38;5;202m\]\$(__git_ps1) $\[\e[0m\] "
+export PS1="\[\e[0;90m\]\n| \t\e[0m\]\e[1;38;5;202m\] $LINE\[\e[0m\] \e[0;90m\]\n| [\u@\h]\[\e[0m\] \W \e[0;90m\]\n|\[\e[38;5;202m\]\$(__git_ps1) $\[\e[0m\] "
+
