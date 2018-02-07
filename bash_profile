@@ -1,3 +1,6 @@
+# Export variables
+export EDITOR=/usr/bin/vim
+
 # Bash colors
 export CLICOLOR=1
 export TERM=xterm-256color
