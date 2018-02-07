@@ -75,6 +75,9 @@ endfunction
 inoremap <Tab> <c-r>=InsertTabWrapper()<cr>
 inoremap <S-Tab> <c-n>
 
+" Lazy colon
+nnoremap ; :
+
 " Switch between the last two files
 nnoremap <Leader><Leader> <c-^>
 
