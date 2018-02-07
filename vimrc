@@ -273,6 +273,8 @@ nnoremap <Leader>o :Files<CR>
 nnoremap <Leader>O :CtrlP<CR>
 nnoremap <Leader>w :w<CR>
 nnoremap <Leader>i i <ESC>r
+nnoremap <Leader>no :normal<space>o<CR>
+nnoremap <Leader>nO :normal<space>O<CR>
 
 " Insert mode completion
 imap <c-x><c-k> <plug>(fzf-complete-word)
