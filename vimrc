@@ -17,6 +17,7 @@ set autowrite     " Automatically :write before running commands
 set autoindent
 set showmatch
 set autoread
+set scrolloff=5
 
 if !has('gui_running')
   set t_Co=256
