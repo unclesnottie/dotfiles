@@ -20,6 +20,7 @@ alias la='ls -a'
 alias lal='ls -al'
 alias vi='mvim -v'
 alias vim='mvim -v'
+alias diff='git diff --no-index'
 
 # Functions
 mcd() { mkdir -p "$1"; cd "$1"; }
