@@ -1,3 +1,6 @@
+# Export variables
+export EDITOR=/usr/bin/vim
+
 # Bash colors
 export CLICOLOR=1
 export TERM=xterm-256color
@@ -20,6 +23,7 @@ alias la='ls -a'
 alias lal='ls -al'
 alias vi='mvim -v'
 alias vim='mvim -v'
+alias diff='git diff --no-index'
 
 # Functions
 mcd() { mkdir -p "$1"; cd "$1"; }
