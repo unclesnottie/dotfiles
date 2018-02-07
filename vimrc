@@ -272,6 +272,7 @@ omap <leader><tab> <plug>(fzf-maps-o)
 nnoremap <Leader>o :Files<CR>
 nnoremap <Leader>O :CtrlP<CR>
 nnoremap <Leader>w :w<CR>
+nnoremap <Leader>i i <ESC>r
 
 " Insert mode completion
 imap <c-x><c-k> <plug>(fzf-complete-word)
