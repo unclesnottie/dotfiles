@@ -18,15 +18,16 @@ Plugin 'BufOnly.vim'
 Plugin 'junegunn/fzf.vim'
 Plugin 'junegunn/fzf'
 Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'benmills/vimux'
-Plugin 'jeetsukumaran/vim-buffergator'
 Plugin 'gilsondev/searchtasks.vim'
 Plugin 'Shougo/neocomplete.vim'
 
 " Generic Programming Support
 Plugin 'jakedouglas/exuberant-ctags'
 Plugin 'Townk/vim-autoclose'
-Plugin 'tomtom/tcomment_vim'
+Plugin 'tpope/vim-commentary'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-repeat'
+Plugin 'tpope/vim-unimpaired'
 Plugin 'janko-m/vim-test'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'neomake/neomake'
@@ -38,8 +39,6 @@ Plugin 'jtratner/vim-flavored-markdown'
 Plugin 'LanguageTool'
 
 " Git Support
-Plugin 'kablamo/vim-git-log'
-Plugin 'gregsexton/gitv'
 Plugin 'tpope/vim-fugitive'
 
 " Erlang Support

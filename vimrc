@@ -1,6 +1,8 @@
 " Leader
-let mapleader = " "
+let mapleader = ' '
 
+"set path+=**
+"set wildmenu
 "set backspace=2   " Backspace deletes like most programs in insert mode
 set nobackup
 set nowritebackup
@@ -25,11 +27,11 @@ endif
 
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
-if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
+if (&t_Co > 2 || has('gui_running')) && !exists('syntax_on')
   syntax on
 endif
 
-if filereadable(expand("~/.vimrc.bundles"))
+if filereadable(expand('~/.vimrc.bundles'))
   source ~/.vimrc.bundles
 endif
 
@@ -71,9 +73,9 @@ set wildmode=list:longest,list:full
 function! InsertTabWrapper()
     let col = col('.') - 1
     if !col || getline('.')[col - 1] !~ '\k'
-        return "\<tab>"
+        return '\<tab>'
     else
-        return "\<c-p>"
+        return '\<c-p>'
     endif
 endfunction
 inoremap <Tab> <c-r>=InsertTabWrapper()<cr>
@@ -144,11 +146,11 @@ augroup markdown
 augroup END
 
 " Vim-Alchemist Configuration
-"let g:alchemist#elixir_erlang_src = "/Users/amacgregor/Projects/Github/alchemist-source"
+"let g:alchemist#elixir_erlang_src = '/Users/amacgregor/Projects/Github/alchemist-source'
 let g:alchemist_tag_disable = 1
 
 " Vim-Supertab Configuration
-let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
+let g:SuperTabDefaultCompletionType = '<C-X><C-O>'
 
 " Settings for Writting
 let g:pencil#wrapModeDefault = 'soft'   " default is 'hard'
@@ -162,7 +164,7 @@ augroup pencil
 augroup END
 
 " Vim-Test Configuration
-let test#strategy = "vimux"
+let test#strategy = 'vimux'
 
 " Neocomplete Settings
 let g:acp_enableAtStartup = 0
@@ -276,8 +278,6 @@ nnoremap <Leader>o :Files<CR>
 nnoremap <Leader>O :CtrlP<CR>
 nnoremap <Leader>w :w<CR>
 nnoremap <Leader>i i <ESC>r
-nnoremap <Leader>no :normal<space>o<CR>
-nnoremap <Leader>nO :normal<space>O<CR>
 
 " Insert mode completion
 imap <c-x><c-k> <plug>(fzf-complete-word)
@@ -296,21 +296,7 @@ nmap <silent> <leader>g :TestVisit<CR>
 autocmd FileType elixir nnoremap <buffer> <leader>h :call alchemist#exdoc()<CR>
 autocmd FileType elixir nnoremap <buffer> <leader>d :call alchemist#exdef()<CR>
 
-" tComment extra mappings:
-" yank visual before toggle comment
-vmap gy ygvgc
-" yank and past visual before toggle comment
-vmap gyy ygvgc'>gp'.
-" yank line before toggle comment
-nmap gy yygcc
-" yank and paste line before toggle comment and remember position
-" it works both in normal and insert mode
-" Use :t-1 instead of yyP to preserve registers
-nmap gyy mz:t-1<cr>gCc`zmz
-imap gyy <esc>:t-1<cr>gCcgi
-vmap gcc gc
-
 " Local config
-if filereadable($HOME . "/.vimrc.local")
+if filereadable($HOME . '/.vimrc.local')
   source ~/.vimrc.local
 endif
