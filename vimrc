@@ -61,6 +61,9 @@ set colorcolumn=+1
 set number
 set numberwidth=5
 
+" Add command to make ctags file
+command! MakeTags !/usr/local/bin/ctags -R .
+
 " Tab completion
 " will insert tab at beginning of line,
 " will use completion if not at beginning
