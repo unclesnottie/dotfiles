@@ -60,8 +60,14 @@ set textwidth=80
 set colorcolumn=+1
 
 " Numbers
-set number
+set number relativenumber
 set numberwidth=5
+
+:augroup numbertoggle
+:  autocmd!
+:  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
+:  autocmd BufLeave,FocusLost,InsertEnter * set norelativenumber
+:augroup END
 
 " Add command to make ctags file
 command! MakeTags !/usr/local/bin/ctags -R .
