@@ -21,6 +21,14 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'gilsondev/searchtasks.vim'
 Plugin 'Shougo/neocomplete.vim'
 
+" TextObj - Custom text objects for the line, indent level, entier file, etc
+Plugin 'kana/vim-textobj-user'
+Plugin 'kana/vim-textobj-line'
+Plugin 'kana/vim-textobj-indent'
+Plugin 'kana/vim-textobj-entire'
+Plugin 'beloglazov/vim-textobj-quotes'
+Plugin 'andyl/vim-textobj-elixir'
+
 " Generic Programming Support
 Plugin 'jakedouglas/exuberant-ctags'
 Plugin 'Townk/vim-autoclose'
