@@ -20,6 +20,7 @@ Plugin 'junegunn/fzf'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'gilsondev/searchtasks.vim'
 Plugin 'Shougo/neocomplete.vim'
+Plugin 'christoomey/vim-system-copy'
 
 " TextObj - Custom text objects for the line, indent level, entier file, etc
 Plugin 'kana/vim-textobj-user'
