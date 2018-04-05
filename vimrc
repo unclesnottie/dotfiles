@@ -57,6 +57,7 @@ set nojoinspaces
 
 " Make it obvious where 80 characters is
 set textwidth=80
+set fo-=t
 set colorcolumn=+1
 
 " Numbers
