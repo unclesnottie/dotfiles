@@ -9,6 +9,9 @@ export LSCOLORS=ExFxBxDxCxegedabagacad
 # Erlang/Elixir Env Vars
 export ERL_AFLAGS="-kernel shell_history enabled"
 
+# Magic Space
+bind Space:magic-space
+
 # Alias commands
 alias g='git'
 alias md5sum='md5'
