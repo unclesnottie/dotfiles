@@ -78,6 +78,10 @@ fi
 source ~/.git-prompt.sh
 GIT_PS1_SHOWDIRTYSTATE=true
 
+# asdf command completion
+. $(brew --prefix asdf)/asdf.sh
+. $(brew --prefix asdf)/etc/bash_completion.d/asdf.bash
+
 #Fancy Bash Prompt
 LINE==========================
 export PS1="\[\e[0;90m\]\n\t\e[1;38;5;202m\] $LINE\[\e[0;90m\]\n[\u@\h]\[\e[0m\] \W\n\[\e[38;5;202m\]$(__git_ps1) $\[\e[0m\] "
